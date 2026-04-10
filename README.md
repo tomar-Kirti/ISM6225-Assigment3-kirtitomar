@@ -17,10 +17,10 @@ Static multi-page site for a book club: catalog with cover tiles, Chart.js insig
 
 | Path | Description |
 |------|-------------|
-| `index.html` | Home: hero, cover “shelf,” links to catalog and insights |
+| `index.html` | Home: hero, cover shelf, links to catalog and insights |
 | `books.html` | Catalog: tiles rendered from `books-data.js` |
 | `visualizations.html` | Bar, pie, and line charts |
-| `about.html` | Team, ER diagram image, GitHub, tech stack |
+| `about.html` | Team, ER diagram (inline SVG; source also in `images/er-diagram.svg`), GitHub, tech stack |
 | `mybot.html` | Chatbot page + embed |
 | `crud-create.html` / `crud-update.html` / `crud-delete.html` | Static CRUD demos (alerts) |
 | `books-data.js` | Book records + local cover paths under `images/covers/` |
@@ -56,4 +56,4 @@ Using a local server avoids issues with `file://` and ensures relative paths lik
 
 ## License / course use
 
-Course project (ISM 6225). Use per your instructor’s requirements.
+Course project (ISM 6225). Use per your instructor's requirements.

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About This Project — The Reading Room</title>
+    <title>About This Project &mdash; The Reading Room</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,14 +66,59 @@
         <section class="mb-5">
           <h2 class="h4 mb-3">Data Model</h2>
           <figure class="mb-0">
-            <img
-              src="images/er-diagram.svg"
-              alt="ER diagram: Genre and Author entities connect one-to-many to Book; Book holds genre_id and author_id foreign keys."
-              class="img-fluid mx-auto d-block border rounded"
-              style="max-width: 600px; width: 100%; height: auto"
-              width="600"
-              height="300"
-            />
+            <div
+              class="border rounded mx-auto overflow-hidden bg-white"
+              style="max-width: 600px"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 600 300"
+                class="d-block w-100"
+                style="height: auto"
+                role="img"
+                aria-labelledby="erTitle erDesc"
+              >
+                <title id="erTitle">Entity-relationship diagram: Genre, Author, Book</title>
+                <desc id="erDesc">
+                  Genre and Author each relate one-to-many to Book via foreign keys genre_id and
+                  author_id.
+                </desc>
+                <defs>
+                  <style>
+                    .box { fill: #fff; stroke: #3B1F0E; stroke-width: 2; }
+                    .title { font-family: Georgia, serif; font-size: 14px; font-weight: bold; fill: #3B1F0E; }
+                    .attr { font-family: Inter, Arial, sans-serif; font-size: 11px; fill: #3B1F0E; }
+                    .pk { font-weight: bold; }
+                    .fk { font-style: italic; }
+                    .line { stroke: #3B1F0E; stroke-width: 2; fill: none; }
+                    .card { font-family: Arial, sans-serif; font-size: 11px; fill: #3B1F0E; }
+                  </style>
+                </defs>
+                <rect class="box" x="32" y="36" width="144" height="92" rx="4" />
+                <text class="title" x="104" y="58" text-anchor="middle">Genre</text>
+                <text class="attr pk" x="44" y="78">genre_id (PK)</text>
+                <text class="attr" x="44" y="94">name</text>
+                <rect class="box" x="32" y="168" width="144" height="92" rx="4" />
+                <text class="title" x="104" y="190" text-anchor="middle">Author</text>
+                <text class="attr pk" x="44" y="210">author_id (PK)</text>
+                <text class="attr" x="44" y="226">name</text>
+                <rect class="box" x="292" y="52" width="276" height="196" rx="4" />
+                <text class="title" x="430" y="76" text-anchor="middle">Book</text>
+                <text class="attr pk" x="304" y="96">book_id (PK)</text>
+                <text class="attr" x="304" y="112">title</text>
+                <text class="attr" x="304" y="128">year</text>
+                <text class="attr" x="304" y="144">pages</text>
+                <text class="attr" x="304" y="160">rating</text>
+                <text class="attr fk" x="304" y="184">genre_id (FK)</text>
+                <text class="attr fk" x="304" y="200">author_id (FK)</text>
+                <path class="line" d="M 176 82 L 240 82 L 240 120 L 292 120" />
+                <text class="card" x="200" y="74">1</text>
+                <text class="card" x="268" y="114">N</text>
+                <path class="line" d="M 176 214 L 260 214 L 260 180 L 292 180" />
+                <text class="card" x="208" y="206">1</text>
+                <text class="card" x="268" y="174">N</text>
+              </svg>
+            </div>
             <figcaption class="text-center text-muted small mt-2">
               Entity-relationship (ER) diagram for the book catalog data model.
             </figcaption>
@@ -102,7 +147,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container">© 2025 The Reading Room</div>
+      <div class="container">&copy; 2025 The Reading Room</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -55,9 +55,9 @@
         "</span></p>" +
         '<p class="small mb-0 book-tile-meta"><strong>' +
         esc(String(book.rating)) +
-        "</strong> · " +
+        "</strong> | " +
         esc(String(book.year)) +
-        " · " +
+        " | " +
         esc(String(book.pages)) +
         " pp.</p>";
 

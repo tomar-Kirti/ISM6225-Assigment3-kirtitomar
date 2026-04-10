@@ -11,7 +11,7 @@
       var link = document.createElement("a");
       link.className = "home-shelf-item";
       link.href = "books.html";
-      link.title = "View catalog — " + book.title;
+      link.title = "View catalog - " + book.title;
 
       var wrap = document.createElement("div");
       wrap.className = "home-shelf-cover";

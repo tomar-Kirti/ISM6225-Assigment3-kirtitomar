@@ -48,42 +48,57 @@
     </nav>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section hero-section--editorial">
         <div class="container">
-          <h1 class="display-5 fw-bold mb-3">Welcome to The Reading Room</h1>
-          <p class="lead mb-4">Track, discover, and discuss your favorite books</p>
-          <p class="mx-auto" style="max-width: 42rem">
-            The Reading Room is our book club’s home on the web — a cozy space to explore
-            curated titles, compare ratings and genres, and connect with fellow readers. Whether
-            you are planning your next read or digging into the numbers behind our catalog, you
-            will find tools and inspiration here.
+          <p class="hero-kicker text-uppercase small mb-2">Book club · Est. 2025</p>
+          <hr class="hero-rule mx-auto" />
+          <h1 class="display-4 fw-bold mb-3">Welcome to The Reading Room</h1>
+          <p class="lead hero-lead mb-4">Track, discover, and discuss your favorite books</p>
+          <p class="mx-auto hero-prose">
+            The Reading Room is our book club’s home on the web — a cozy space to explore curated
+            titles, compare ratings and genres, and connect with fellow readers. Whether you are
+            planning your next read or digging into the numbers behind our catalog, you will find
+            tools and inspiration here.
           </p>
         </div>
       </section>
 
-      <div class="container pb-5">
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-5">
-            <div class="feature-card p-4">
-              <h3 class="h5 mb-3">Browse Our Catalog</h3>
-              <p class="text-muted small mb-4">
-                See every title in our collection with authors, genres, years, ratings, and page
-                counts.
-              </p>
-              <a class="btn btn-gold" href="books.html">Go to Books</a>
+      <section class="home-shelf-section py-4 py-md-5">
+        <div class="container">
+          <h2 class="h5 text-center mb-4 home-section-title">From the shelves</h2>
+          <div id="home-shelf" class="row g-3 justify-content-center"></div>
+          <p class="text-center small mt-4 mb-0">
+            <a href="books.html" class="link-dark link-offset-2">Browse all titles</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="home-features py-5">
+        <div class="container">
+          <h2 class="h4 text-center mb-4 home-section-title">Start exploring</h2>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="feature-card p-4">
+                <h3 class="h5 mb-3">Browse Our Catalog</h3>
+                <p class="text-muted small mb-4">
+                  See every title in our collection with covers, authors, genres, years, ratings,
+                  and page counts.
+                </p>
+                <a class="btn btn-gold" href="books.html">Go to Books</a>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <div class="feature-card p-4">
-              <h3 class="h5 mb-3">View Insights</h3>
-              <p class="text-muted small mb-4">
-                Charts show average ratings by genre, genre distribution, and books by decade.
-              </p>
-              <a class="btn btn-gold" href="visualizations.html">View Insights</a>
+            <div class="col-md-6 col-lg-5">
+              <div class="feature-card p-4">
+                <h3 class="h5 mb-3">View Insights</h3>
+                <p class="text-muted small mb-4">
+                  Charts show average ratings by genre, genre distribution, and books by decade.
+                </p>
+                <a class="btn btn-gold" href="visualizations.html">View Insights</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -97,5 +112,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="books-data.js"></script>
+    <script src="home-shelf.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/04/10/22/20260410220316-DQ32VWR5.js" defer></script>
   </body>
 </html>

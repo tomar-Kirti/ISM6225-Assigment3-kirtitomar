@@ -1,0 +1,166 @@
+/* The Reading Room — shared styles */
+
+:root {
+  --cream: #FDF6EC;
+  --brown: #3B1F0E;
+  --gold: #C9A84C;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--cream);
+  color: var(--brown);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Navbar */
+.navbar-site {
+  background-color: var(--brown) !important;
+}
+
+.navbar-site .navbar-brand {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.navbar-site .nav-link {
+  color: #fff !important;
+}
+
+.navbar-site .nav-link:hover,
+.navbar-site .nav-link:focus {
+  color: var(--gold) !important;
+}
+
+.navbar-site .nav-link.active {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.navbar-site .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.navbar-site .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Hero */
+.hero-section {
+  background-color: var(--cream);
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: var(--brown);
+}
+
+.hero-section .lead {
+  color: #5c4033;
+}
+
+/* Cards */
+.feature-card {
+  background: #fff;
+  border: 1px solid rgba(59, 31, 14, 0.12);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(59, 31, 14, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0.35rem 1rem rgba(201, 168, 76, 0.25);
+}
+
+/* Buttons (primary gold) */
+.btn-gold {
+  --bs-btn-color: var(--brown);
+  --bs-btn-bg: var(--gold);
+  --bs-btn-border-color: var(--gold);
+  --bs-btn-hover-color: var(--brown);
+  --bs-btn-hover-bg: #b8963f;
+  --bs-btn-hover-border-color: #b8963f;
+  --bs-btn-focus-shadow-rgb: 201, 168, 76;
+  --bs-btn-active-color: var(--brown);
+  --bs-btn-active-bg: #a88638;
+  --bs-btn-active-border-color: #a88638;
+}
+
+/* Table */
+.table-books thead {
+  background-color: var(--gold);
+  color: var(--brown);
+}
+
+.table-books thead th {
+  border-color: rgba(59, 31, 14, 0.2);
+  font-weight: 600;
+}
+
+.table-books.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: rgba(201, 168, 76, 0.12);
+}
+
+.table-books tbody td {
+  vertical-align: middle;
+}
+
+/* CRUD button row */
+.crud-nav .btn {
+  min-width: 8.5rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--brown);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.site-footer .footer-link {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.site-footer .footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Charts */
+.chart-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.chart-card .card-body {
+  padding-bottom: 1.75rem;
+}
+
+/* Danger card (delete page) */
+.card-danger-outline {
+  border: 2px solid #dc3545;
+  background: #fff8f8;
+}
